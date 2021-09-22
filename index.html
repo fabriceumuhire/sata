@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>SATA | Home</title>
+</head>
+<body>
+    <!-- Header section -->
+    <section class="header">
+        <img src="./img/logo.png" alt="sata image">
+        <div class="menu">
+          <div class="toggle">
+            <i class="fas fa-times close-btn"></i>
+          </div>
+            <a href="#landing">About SATA</a>
+            <a href="#landing">SATA Call</a>
+            <a href="./pages/benefits.html">Benefits</a>
+            <a href="./pages/cases.html">Use cases</a>
+            <a href="./pages/certifications.html">Certifications</a>
+            <a href="./pages/sdg.html">SATA & SDGs</a>
+        </div>
+        <div class="toggle">
+          <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </section>
+    <!-- End of header section-->
+    <!-- Landing page -->
+    <section class= "landing" id="landing">
+        <div class="home">
+            <p>SMART AFRICA TRUST ALLIANCE<span></span></p>
+            <h1>Mobilize Africa<span></span></h1>
+            <h1>to its full potential<span></span></h1>
+            <h1>into a single digital market<span></span></h1>
+        </div>
+    </section>
+    <!-- End of the landing page -->
+    <!-- About section-->
+    <section class="about" id="about-us">
+        <div class="about-passion">
+            <h1>What is SATA?</h1>
+            <div class="about-fav">
+                <p>
+                    <span>Smart Africa Trust Alliance (SATA)</span> is a continental consortium which aims to empower people and organizations to interact and transact across the borders of Smart Africa State Members through a digital framework.<br/><br/>
+                    With more than 41% of population without legal identity, SATA will facilitate to empower these people to engage across the continent through integration of functional solutions with Service Providers and create confidence to new opportunities for transnational traders easing the present border barriers.<br/>
+                </p>
+            </div>
+            <div class="list">
+                <div class="category">
+                    <p>
+                        <a href="./pages/benefits.html">Benefits: SATA to empower business and services</a>
+                    </p>
+                </div>
+                <div class="category">
+                    <p>
+                        <a href="./pages/cases.html">Use cases: two pilot projects by SATA</a>
+                    </p>
+                </div>
+                <div class="category">
+                    <p>
+                        <a href="./pages/certifications.html">Certification & Compliance: Core task for SATA</a>
+                    </p>
+                </div>
+                <div class="category">
+                    <p>
+                        <a href="./pages/sdg.html">SATA & SDGs</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="about-img">
+            <p>
+                “Digital Identity systems are at the heart of Africa’s digital transformation agenda. They can help us reach marginalized populations, enhance public service delivery, and unlock new economic opportunities”<br/>
+            </p>
+            <span>Mr. Lacina KONÉ<br/>
+                  Director General
+            </span>
+        </div>
+    </section>
+    <!-- End of About section-->
+    <!-- About section-->
+    <section class="mob-about" id="about-us">
+        <div class="about-passion">
+            <h1>What is SATA?</h1>
+            <div class="about-fav">
+                <p>
+                    <span>Smart Africa Trust Alliance (SATA)</span> is a continental consortium which aims to empower people and organizations to interact and transact across the borders of Smart Africa State Members through a digital framework.<br/>
+                </p>
+                <div class="about-img">
+                    <p>
+                        “Digital Identity systems are at the heart of Africa’s digital transformation agenda. They can help us reach marginalized populations, enhance public service delivery, and unlock new economic opportunities”<br/>
+                    </p>
+                    <span>Mr. Lacina KONÉ<br/>
+                          Director General
+                    </span>
+                </div>
+                <p>
+                    With more than 41% of population without legal identity, SATA will facilitate to empower these people to engage across the continent through integration of functional solutions with Service Providers and create confidence to new opportunities for transnational traders easing the present border barriers.<br/>
+                </p>
+            </div>
+            <div class="list">
+                <div class="category">
+                    <p>
+                        <a href="./pages/benefits.html">SATA's Benefits</a>
+                    </p>
+                </div>
+                <div class="category">
+                    <p>
+                        <a href="./pages/cases.html">SATA's pilot projects</a>
+                    </p>
+                </div>
+                <div class="category">
+                    <p>
+                        <a href="./pages/certifications.html">Certification & Compliance</a>
+                    </p>
+                </div>
+                <div class="category">
+                    <p>
+                        <a href="./pages/sdg.html">SATA & SDGs</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of About section-->
+    <!-- footer -->
+    <section class="footer">
+        <div class="footer-col">
+            <img src="./img/SAS logo.png" alt="sata image">
+            <h4>SMART AFRICA TRUST ALLIANCE</h4>
+        </div>
+    </section>
+    <script>
+        const menu = document.querySelector('.menu');
+        const menuBtn = document.querySelector('.menu-btn');
+        const closeBtn = document.querySelector('.close-btn');
+  
+        menuBtn.addEventListener('click', () => {
+          menu.classList.add('active');
+        });
+  
+        menu.addEventListener('click', () => {
+          menu.classList.remove('active');
+        });
+  
+        closeBtn.addEventListener('click', () => {
+          menu.classList.remove('active');
+        });
+      </script>
+</body>
+</html>

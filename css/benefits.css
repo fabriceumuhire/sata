@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300;700;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+  }
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    z-index: 999;
+    position: fixed;
+    background-color: #F7F7F7;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.header img {
+    height: 70px;
+}
+
+.header .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .menu a {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 10px;
+    padding: 0 10px;
+    color: #000000;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: color, background-color;
+}
+
+.header .menu a:hover {
+    color: #F78F20;
+}
+
+.header .menu a:active {
+    color: #F78F20;
+}
+
+.header .toggle {
+    color: #254090;
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.header .toggle .close-btn{
+    color: #FFFFFF;
+}
+.landing {
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    background-image: url('../img/backgrd.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.landing .home {
+    padding: 80px 60px;
+    margin-top: 60px;
+    color: #f7f7f7;
+    letter-spacing: 1px;
+}
+
+.landing .home h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.benefits {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+}
+
+.benefits .benefit-content {
+    width: 90%;
+    height: auto;
+    margin: 20px 0px 0px 120px;
+}
+
+.benefits .benefit-content h1 {
+    width: 30%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    padding-bottom: 20px;
+    color: #254090;
+}
+
+.benefits .benefit-content .benefit-overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 0px 10px 0px;
+}
+
+.benefits .benefit-content .benefit-overview .content {
+    width: 100%;
+}
+
+.benefits .benefit-content .benefit-overview .content h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    padding-bottom: 20px;
+    color: #254090;
+}
+.benefits .benefit-content .benefit-overview .content p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    /* padding-bottom: 20px; */
+    line-height: 25px;
+}
+.logo {
+    width: 90%;
+    
+}
+.logo img{
+    max-width: 100%;
+    min-height: 28vh;
+    margin: 20px 0px 0px 20px;
+}
+
+.benefit-slide {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin: 20px 40px 40px 0px;
+  }
+  .benefit-slide .slide {
+      margin-right: 20px;
+      padding: 30px 20px 30px 20px;
+      background-color: #F7F7F7;
+      border-radius: 10px;
+  }
+  .benefit-slide .slide img {
+    height: auto;
+    max-width: 100%;
+  }
+  /* .dots-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .dots-container .dot {
+    cursor: pointer;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    color: #333;
+    border-radius: 50%;
+    background-color: #dfd6ce;
+  }
+  
+  .dots-container .dot.active {
+    border: 2px solid green;
+  } */
+  .benefits .benefit-content .mobile {
+      display: none;
+  }
+.footer {
+    position: relative;
+    width: 100%;
+    min-height: 8vh;
+    background-color: #254090;
+}
+
+.footer .footer-col{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer .footer-col img {
+    width: 35px;
+    margin-right: 20px;
+}
+
+.footer .footer-col h4{
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 920px){
+    .header {
+        padding: 0px;
+        height: 60px;
+    }
+    .header img {
+        height: 50px;
+        margin-left: 10px;
+    }
+    .header .toggle{
+        display: block;
+    }
+
+    .header .menu {
+        position: fixed;
+        background-color: #254090;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        padding: 10px 20px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .header .menu.active {
+        right: 0;
+    }
+
+    .header .menu .close-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 20px;
+    }
+
+    .header .menu a{
+        display: block;
+        font-size: 20px;
+        margin: 20px;
+        padding: 0 15px;
+        color: #FFFFFF;
+    }
+    .landing {
+        min-height: 10vh;
+    }
+    
+    .landing .home {
+        padding: 40px 0px;
+        margin-top: 50px;
+    }
+    
+    .landing .home h1 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .benefits .benefit-content {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+    }
+    
+    .benefits .benefit-content h1 {
+        width: 70%;
+        font-size: 28px;
+        padding-bottom: 10px;
+        margin: 10px 0px 0px 10px;
+    }
+    .benefits .benefit-content .benefit-overview {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .benefits .benefit-content .benefit-overview .logo{
+        display: none;
+    }
+    .benefits .benefit-content .mobile {
+        display: flex;
+        width: 100%;
+        margin: 0px;
+        position: relative;
+    }
+    .mobile .mySlides {
+        padding: 0px 10px 10px 10px;
+    }
+    .mobile .mySlides h3 {
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        padding: 10px 0px 20px 0px;
+        color: #254090;
+    }
+    .benefits .benefit-content .benefit-overview .container {
+        background-color: #254090;
+        width: 100% !important;
+        margin: 0px !important;
+        padding: 5px;
+    }
+    .mobile .mySlides ul li{
+        background-color: #9CC6ED;
+        color: #000000;
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    /* The dots/bullets/indicators */
+    .dotted-container {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .dotted {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #dfd6ce;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    .active, .dotted:hover {
+        border: 2px solid green;
+    }
+    
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+    
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+    .benefits .benefit-content .benefit-overview .content {
+        width: 100%;
+    }
+    
+    .benefits .benefit-content .benefit-overview .content h2 {
+        font-family: 'Nunito', sans-serif;
+        font-size: 22px;
+        padding-bottom: 20px;
+        color: #F78F20;
+        margin: 20px 0px 0px 10px;
+    }
+    .benefits .benefit-content .benefit-overview .content p{
+        margin: 0px 20px 0px 10px;
+        font-size: 16px;
+    }
+    .benefits .benefit-content .benefit-overview .content .container p {
+        color: #FFFFFF;
+    }
+    .benefit-slide {
+        display: none;
+    }
+    .dots-container {
+        display: none;
+    }
+    .footer .footer-col img {
+        width: 30px;
+    }
+    
+    .footer .footer-col h4{
+        font-size: 14px;
+    }
+}
