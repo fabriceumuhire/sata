@@ -174,26 +174,6 @@ li {
     height: auto;
     max-width: 100%;
   }
-  /* .dots-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .dots-container .dot {
-    cursor: pointer;
-    margin: 5px;
-    width: 20px;
-    height: 20px;
-    color: #333;
-    border-radius: 50%;
-    background-color: #dfd6ce;
-  }
-  
-  .dots-container .dot.active {
-    border: 2px solid green;
-  } */
   .benefits .benefit-content .mobile {
       display: none;
   }
