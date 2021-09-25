@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/benefits.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>SATA | Call</title>
+</head>
+<body>
+    <!-- Header section -->
+    <section class="header">
+        <img src="../img/logo.png" alt="sata image">
+        <div class="menu">
+          <div class="toggle">
+            <i class="fas fa-times close-btn"></i>
+          </div>
+            <a href="../index.html">About SATA</a>
+            <a href="#landing">SATA Call</a>
+            <a href="./benefits.html">Benefits</a>
+            <a href="./cases.html">Use cases</a>
+            <a href="./certifications.html">Certifications</a>
+            <a href="./sdg.html">SATA & SDGs</a>
+        </div>
+        <div class="toggle">
+          <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </section>
+    <!-- End of header section-->
+    <!-- Landing page -->
+    <section class= "landing">
+        <div class="home">
+            <h1>SMART AFRICA TRUST ALLIANCE - CALL</h1>
+        </div>
+    </section>
+    <!-- End of the landing page -->
+    <!-- Call section-->
+    
+    <!-- End of Call section-->
+    <!-- footer -->
+    <section class="footer">
+        <div class="footer-col">
+            <img src="../img/SAS logo.png" alt="sata image">
+            <h4>SMART AFRICA TRUST ALLIANCE</h4>
+        </div>
+    </section>
+    <script>
+        // This function is for the hamburger menu
+        const menu = document.querySelector('.menu');
+        const menuBtn = document.querySelector('.menu-btn');
+        const closeBtn = document.querySelector('.close-btn');
+  
+        menuBtn.addEventListener('click', () => {
+          menu.classList.add('active');
+        });
+  
+        menu.addEventListener('click', () => {
+          menu.classList.remove('active');
+        });
+  
+        closeBtn.addEventListener('click', () => {
+          menu.classList.remove('active');
+        });
+      </script>
+</body>
+</html>

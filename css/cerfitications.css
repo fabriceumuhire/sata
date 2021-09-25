@@ -104,37 +104,39 @@ li {
     position: relative;
     width: 100%;
     min-height: 80vh;
-    margin: 40px 20px 40px 120px;
+    margin: 20px 20px 20px 120px;
 }
 .container h1 {
     width: 80%;
     font-family: 'Nunito', sans-serif;
     font-size: 36px;
     font-weight: 800;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     color: #254090;
 }
 .container .details {
-    width: 80%;
-    font-size: 22px;
+    width: 90%;
+    font-size: 20px;
 }
 .container .details p {
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 .container .details .process {
-    width: 90%;
+    width: 100%;
     justify-content: center;
 }
 .container .details .process h3 {
+    font-size: 28px;
+    font-weight: bold;
     text-align: center;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 }
 .container .details .process .mob {
     display: none;
 }
 .container .details .process img {
-    width: 95%;
-    margin: 0px 0px 40px 80px;
+    width: 100%;
+    margin: 0px 0px 40px 40px;
 }
 .footer {
     position: relative;
@@ -218,25 +220,26 @@ li {
         font-weight: 400;
     }
     .container {
-        margin: 40px 10px 40px 20px;
+        margin: 10px 10px 30px 20px;
     }
     .container h1 {
-        width: 95%;
+        width: 100%;
         font-size: 26px;
-        padding-bottom: 40px;
+        padding-bottom: 10px;
     }
     .container .details {
         width: 95%;
         font-size: 16px;
     }
     .container .details p {
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
     .container .details .process {
-        width: 90%;
+        width: 100%;
     }
     .container .details .process h3 {
-        padding-bottom: 30px;
+        font-size: 22px;
+        padding-bottom: 20px;
     }
     .container .details .process .image {
         display: none;
@@ -244,10 +247,33 @@ li {
     .container .details .process .mob {
         display: block;
     }
-     .container .details .process img {
+    .container .details .process .mob .btn {
+        width: 90%;
+        min-height: 5vh;
+        align-content: center;
+        margin: 0px 0px 10px 20px;
+        border: none;
+    }
+    .container .details .process .mob .btn i{
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    .container .details .process .mob .btn:nth-child(1) {
+        background-color: #254090;
+    }
+    .container .details .process .mob .btn:nth-child(2) {
+        background-color: #F78F20;
+    }
+    .container .details .process .mob .btn:nth-child(3) {
+        background-color: #10a680;
+    }
+    .container .details .process .mob .btn:nth-child(4) {
+        background-color: #254090;
+    }
+     /* .container .details .process img {
         width: 100%;
         margin: 0px 0px 20px 0px;
-    }
+    } */
     .footer .footer-col img {
         width: 30px;
     }
