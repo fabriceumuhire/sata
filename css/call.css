@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300;700;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+  }
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    z-index: 999;
+    position: fixed;
+    background-color: #F7F7F7;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.header img {
+    height: 70px;
+}
+
+.header .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .menu a {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 10px;
+    padding: 0 10px;
+    color: #000000;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: color, background-color;
+}
+.header .menu a:hover {
+    color: #F78F20;
+}
+
+.header .menu a:active {
+    color: #F78F20;
+}
+
+.header .toggle {
+    color: #254090;
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.header .toggle .close-btn{
+    color: #FFFFFF;
+}
+.landing {
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    background-image: url('../img/backgrd.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.landing .home {
+    padding: 80px 60px;
+    margin-top: 60px;
+    color: #f7f7f7;
+    letter-spacing: 1px;
+}
+
+.landing .home h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+.call {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+}
+.call h1 {
+    width: 90%;
+    height: auto;
+    margin: 20px 0px 0px 120px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: #254090;
+}
+.call .details {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+    height: auto;
+    margin: 0px 20px 0px 120px;
+}
+.call .details .content p {
+    width: 80%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    padding: 10px 0px 0px 0px;
+}
+.call .details .visual {
+    width: 90%;
+    margin: 0px 50px 20px 0px;
+}
+.call .details .visual #background {
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-image: url(../img/SAS\ logo.png);
+    padding: 20px; 
+    margin: 20px 0px 0px 0px;
+    box-shadow: 5px 5px #888888;
+}
+.call .details .visual p {
+    width: 100%;
+    color: #254090;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+}
+.call .objective {
+    background-color: #254090;
+    width: 100%;
+    height: auto;
+    margin: 10px 0px 30px 0px;
+    padding-bottom: 10px;
+}
+.call .objective .detailed p{
+    width: 80%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    padding: 0px 0px 30px 120px;
+    color: #FFFFFF;
+}
+.call .objective h2 {
+    width: 80%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    padding: 10px 0px 10px 120px;
+    color: #F78F20;
+}
+.call .features {
+    position: relative;
+    width: 100%;
+}
+.call .features .row {
+    width: 80%;
+    margin: 30px 0px 20px 120px;
+    font-family: 'Nunito', sans-serif;
+}
+.call .features .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.call .features .row .accordion > input[type="checkbox"] {
+    position: absolute;
+    left: -100vw;
+}
+  
+.call .features .row .accordion .content {
+    overflow-y: hidden;
+    height: 0;
+    transition: height 0.3s ease;
+}
+  
+.call .features .row .accordion > input[type="checkbox"]:checked ~ .content {
+height: auto;
+overflow: visible;
+}
+  
+.call .features .row .accordion label {
+display: block;
+}
+  
+.call .features .row .accordion {
+    width: 90%;
+    margin-bottom: 1em;
+}
+.call .features .row .accordion > input[type="checkbox"]:checked ~ .content {
+padding: 15px;
+border: 1px solid #e8e8e8;
+border-top: 0;
+}
+
+.call .features .row .accordion .handle {
+margin: 0;
+font-size: 20px;
+line-height: 1.2em;
+}
+
+.call .features .row .accordion label {
+/* color: #FFFFFF; */
+cursor: pointer;
+font-weight: normal;
+padding: 15px;
+background-color: #e8e8e8;
+}
+
+.call .features .row .accordion label:hover,
+.call .features .row .accordion label:focus {
+color: #F78F20;
+}
+
+.call .features .row .accordion .handle label:before {
+font-family: 'fontawesome';
+content: "\f054";
+display: inline-block;
+margin-right: 10px;
+font-size: .58em;
+line-height: 1.556em;
+vertical-align: middle;
+}
+
+.call .features .row .accordion > input[type="checkbox"]:checked ~ .handle label:before {
+content: "\f078";
+}
+
+
+/*
+Demo purposes only
+*/
+*,
+*:before,
+*:after {
+box-sizing: border-box;
+}
+
+.call .features .row .accordion {
+max-width: 65em;
+}
+
+.call .features .row .accordion p:last-child {
+margin-bottom: 0;
+}
+
+.call .partners {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    background-color: #F7F7F7;
+    padding-top: 20px;
+}
+.call .partners .endorse {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 20px 0px 40px 120px;
+}
+.call .partners .endorse-card {
+    width: 100%;
+    padding: 20px 0px 40px 0px;
+}
+.call .partners .endorse-card img{
+    width: 70%;
+}
+/* .call .partners .endorse-card #small {
+    margin-top: 80px;
+} */
+.footer {
+    position: relative;
+    width: 100%;
+    min-height: 8vh;
+    background-color: #254090;
+}
+
+.footer .footer-col{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer .footer-col img {
+    width: 35px;
+    margin-right: 20px;
+}
+
+.footer .footer-col h4{
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 920px){
+    .header {
+        padding: 0px;
+        height: 60px;
+    }
+    .header img {
+        height: 50px;
+        margin-left: 10px;
+    }
+    .header .toggle{
+        display: block;
+    }
+
+    .header .menu {
+        position: fixed;
+        background-color: #254090;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        padding: 10px 20px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .header .menu.active {
+        right: 0;
+    }
+
+    .header .menu .close-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 20px;
+    }
+
+    .header .menu a{
+        display: block;
+        font-size: 20px;
+        margin: 20px;
+        padding: 0 15px;
+        color: #FFFFFF;
+    }
+    .landing {
+        min-height: 10vh;
+    }
+    
+    .landing .home {
+        padding: 40px 0px;
+        margin-top: 50px;
+    }
+    .landing {
+        min-height: 10vh;
+    } 
+    .landing .home h1 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .call h1 {
+        margin: 10px 0px 0px 20px;
+        font-size: 28px;
+    }
+    .call .details {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: left; */
+        margin: 10px 0px 0px 0px;
+    }
+    .call .details .content p {
+        width: 90%;
+        font-size: 16px;
+        padding: 10px 0px 0px 20px;;
+    }
+    .call .details .visual {
+        width: 90%;
+        margin: 0px 0px 20px 20px;
+    }
+    .call .details .visual p {
+        width: 100%;
+        font-size: 16px;
+        font-weight: normal;
+    }
+    .call .objective .detailed p{
+        width: 95%;
+        font-size: 16px;
+        padding: 0px 0px 10px 20px;
+    }
+    .call .objective h2 {
+        font-size: 28px;
+        padding: 10px 0px 10px 20px;
+    }
+    .call .features .title h1 {
+        font-size: 22px;
+    }
+    .call .features .row {
+        width: 95%;
+        margin: 30px 0px 20px 20px;
+    }
+    .call .features .row .accordion .handle {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.2em;
+    }
+    
+    .call .features .row .accordion label {
+        height: 7S0px;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-weight: normal;
+        padding: 15px;
+        background-color: #254090;
+    }
+    
+    .call .features .row .accordion label:hover,
+    .call .features .row .accordion label:focus {
+        color: #F78F20;
+    }
+    
+    .call .features .row .accordion .handle label:before {
+        font-family: 'fontawesome';
+        content: "\f054";
+        display: inline-block;
+        margin-right: 10px;
+        font-size: .58em;
+        line-height: 1.556em;
+        vertical-align: middle;
+    }
+    
+    .call .features .row .accordion > input[type="checkbox"]:checked ~ .handle label:before {
+    content: "\f078";
+    }
+    
+    
+    /*
+    Demo purposes only
+    */
+    /* *,
+    *:before,
+    *:after {
+    box-sizing: border-box;
+    } */
+    
+    .call .features .row p {
+    margin: 0 0 0em;
+    font-size: 16px;
+    }
+    
+    /* h1 {
+    margin: 0 0 1.5em;
+    font-weight: 600;
+    font-size: 28px;
+    } */
+    
+    .call .features .row .accordion {
+    max-width: 65em;
+    }
+    .call .partners {
+        min-height: 100vh;
+        padding-top: 10px;
+    }
+    .call .partners .endorse {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 20px 0px 0px 20px;
+    }
+    /* .call .partners .endorse-card {
+        width: 100%;
+        padding: 0px 0px 40px 0px;
+    } */
+    .call .partners .endorse-card img{
+        width: 80%;
+    }
+    /* .call .partners .endorse-card:nth-child(4) {
+        margin-top: 50px;
+    } */
+    .footer .footer-col img {
+        width: 30px;
+    }
+    
+    .footer .footer-col h4{
+        font-size: 14px;
+    }
+}

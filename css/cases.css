@@ -126,7 +126,7 @@ li {
 .cases .definition p {
     font-family: 'Nunito', sans-serif;
     width: 80%;
-    font-size: 22px;
+    font-size: 20px;
     padding-bottom: 20px;
     letter-spacing: 0.1px;
 }
@@ -155,7 +155,7 @@ li {
     width: 100%;
 }
 .cases .case-card .case:nth-child(2) .thumbnail {
-    height: 26vh;
+    height: 28vh;
 }
 .cases .case-card .case .thumbnail img {
     height: 100%;

@@ -100,7 +100,7 @@ li {
 }
 .sdg{
     position: relative;
-    margin: 40px 60px 40px 120px;
+    margin: 20px 60px 20px 120px;
 }
 .sdg .sdg-intro {
     width: 100%;
@@ -111,15 +111,15 @@ li {
     font-family: 'Nunito', sans-serif;
     font-size: 36px;
     font-weight: 800;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     color: #254090;
 }
 .sdg .sdg-intro .about-sdg {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 .sdg .sdg-intro .about-sdg p {
     width: 80%;
-    font-size: 22px;
+    font-size: 20px;
 }
 .sdg .sdg-intro .sdg-list {
     /* height: 100%; */
@@ -129,7 +129,7 @@ li {
     width: 60%;
     font-family: 'Nunito', sans-serif;
     font-size: 28px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     color: #254090;
 }
 .sdg .sdg-intro .sdg-list .sdg-cards {
@@ -278,12 +278,12 @@ li {
     }
     .sdg{
         position: relative;
-        margin: 40px 20px 40px 20px;
+        margin: 20px 20px 0px 20px;
     }
     .sdg .sdg-intro h1 {
         width: 80%;
         font-size: 28px;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
     .sdg .sdg-intro .about-sdg p {
         width: 100%;
@@ -308,6 +308,15 @@ li {
     .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .image h4{
         font-size: 16px;
     }
+    .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .image h4:nth-child(1){
+        padding-top: 20px;
+    }
+    .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .image h4:nth-child(7){
+        padding-top: 40px;
+    }
+    .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .image h4:nth-child(9){
+        padding-top: 40px;
+    }
     .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .image img {
         justify-content: center;
         width: 50%;
@@ -317,9 +326,9 @@ li {
         font-size: 16px;
         padding: 0px 5px 0px 10px;
     }
-     .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .content p span {
+     /* .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .content p span {
         display: none;
-    }
+    } */
     
     .footer .footer-col img {
         width: 30px;
