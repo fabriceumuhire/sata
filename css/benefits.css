@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -48,12 +49,13 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .header .menu a {
     font-size: 16px;
     font-weight: bold;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin: 0 10px;
     padding: 0 10px;
     color: #000000;
@@ -63,6 +65,10 @@ li {
 }
 
 .header .menu a:hover {
+    color: #F78F20;
+}
+
+.header .menu .active {
     color: #F78F20;
 }
 
