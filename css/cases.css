@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300;700;800;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 html {
@@ -17,7 +20,7 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     margin: 0;
-  }
+}
 a {
     text-decoration: none;
 }
@@ -49,17 +52,18 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .header .menu a {
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
+    line-height: 20px;
+    font-weight: 600;
+    /* text-transform: uppercase; */
     margin: 0 10px;
-    padding: 0 10px;
-    color: #000000;
-    border-radius: 20px;
+    padding: 25px 20px;
+    color: #080e32;
+    /* border-radius: 20px; */
     transition: 0.3s;
     transition-property: color, background-color;
 }
@@ -102,13 +106,14 @@ li {
 }
 
 .landing .home h1 {
+    font-family: 'Nunito', sans-serif;
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 800;
 }
 .cases {
     height: 100%;
     display: grid;
-    margin: 20px 0px 0px 120px;
+    margin: 30px 0px 0px 200px;
 }
 .cases .definition {
     width: 90%;
@@ -120,36 +125,42 @@ li {
     width: 40%;
     font-size: 36px;
     font-weight: 800;
-    padding-bottom: 20px;
-    color: #254090;
+    /* padding-bottom: 20px; */
+    color: #080e32;
 }
-.cases .definition h2 {
+/* .cases .definition h2 {
     font-family: 'Nunito', sans-serif;
     width: 40%;
-    font-size: 28px;
-    color: #254090;
+    font-size: 36px;
+    color: #080e32;
+} */
+
+.cases .definition .basic {
+    margin: 20px 40px 20px 0px;
 }
-.cases .definition p {
+.cases .definition .basic p {
     font-family: 'Nunito', sans-serif;
     width: 80%;
-    font-size: 20px;
+    font-size: 18px;
+    color: #4b5280;
     padding-bottom: 20px;
     letter-spacing: 0.1px;
+    text-align: justify;
 }
-.cases .definition p span {
+.cases .definition .basic p span {
     color: #F78F20;
 }
 .cases .case-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
-    margin: 0px 20px 40px 0px;
+    margin: 0px 20px 60px 0px;
 }
 .cases .case-card .case {
-    width: 80%;
+    width: 95%;
     height: auto;
-    margin: 20px 0px 0px 40px;
+    margin: 20px 0px 0px 0px;
     border-radius: 10px;
     background-color: #f7f7f7;
     transition: 0.5s;
@@ -157,11 +168,11 @@ li {
     /* word-wrap: break-word; */
 }
 .cases .case-card .case .thumbnail {
-    height: 20vh;
+    height: 40vh;
     width: 100%;
 }
 .cases .case-card .case:nth-child(2) .thumbnail {
-    height: 28vh;
+    /* height: 28vh; */
 }
 .cases .case-card .case .thumbnail img {
     height: 100%;
@@ -171,7 +182,7 @@ li {
 }
 .cases .case-card .case .title {
     text-align: center;
-    padding: 20px 0px 10px 0px;
+    padding: 20px 0px 20px 0px;
 }
 .cases .case-card .case .title h3{
     font-family: 'Nunito', sans-serif;
@@ -180,15 +191,23 @@ li {
     color: #F78F20;
 }
 .cases .case-card .case .details {
+    height: 0.5vh;
+    display: none;
+    transition: 1.5s;
+    transition: height 1.5s;
     padding: 0px 20px 0px 20px;
+}
+.cases .case-card .case:hover .details {
+    height: auto;
+    display: block;
 }
 .cases .case-card .case .details p{
     font-family: 'Nunito', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     padding-bottom: 10px;
 }
 .cases .case-card .case .details ul li {
-    font-size: 16px;
+    font-size: 15px;
     padding-bottom: 10px;
     list-style: circle !important;
 }

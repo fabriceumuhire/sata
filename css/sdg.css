@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300;700;800;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 html {
@@ -49,17 +52,18 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Source Sans Pro', sans-serif;
+    
 }
 
 .header .menu a {
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-weight: 600;
+    /* text-transform: uppercase; */
     margin: 0 10px;
-    padding: 0 10px;
-    color: #000000;
-    border-radius: 20px;
+    padding: 25px 20px;
+    color: #080e32;
+    /* border-radius: 20px; */
     transition: 0.3s;
     transition-property: color, background-color;
 }
@@ -103,13 +107,87 @@ li {
     font-size: 32px;
     font-weight: bold;
 }
+.benefits {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+}
+
+.benefits .benefit-content {
+    height: auto;
+    margin: 20px 40px 0px 200px;
+}
+
+.benefits .benefit-content h1 {
+    width: 60%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    padding-bottom: 20px;
+    color: #080e32;
+}
+
+.benefits .benefit-content .benefit-overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 0px 10px 0px;
+}
+
+.benefits .benefit-content .benefit-overview .content {
+    width: 100%;
+}
+
+.benefits .benefit-content .benefit-overview .content h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    padding-bottom: 20px;
+    color: #080e32;
+}
+.benefits .benefit-content .benefit-overview .content p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #4b5280;
+    /* padding-bottom: 20px; */
+    line-height: 25px;
+    text-align: justify;
+}
+.logo {
+    width: 80%;
+    
+}
+.logo img{
+    max-width: 100%;
+    min-height: auto;
+    margin: 0px 0px 0px 50px;
+}
+
+.benefit-slide {
+    position: relative;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0px 40px 0px;
+}
+.benefit-slide .slide {
+    margin-right: 20px;
+    padding: 20px 10px 20px 10px;
+    /* background-color: #F7F7F7; */
+    /* border-radius: 10px; */
+}
+.benefit-slide .slide img {
+height: auto;
+max-width: 100%;
+}
+.benefits .benefit-content .mobile {
+    display: none;
+}
 .sdg{
     position: relative;
-    margin: 20px 60px 20px 120px;
+    margin: 0px 80px 20px 200px;
 }
 .sdg .sdg-intro {
     width: 100%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 .sdg .sdg-intro h1 {
     width: 60%;
@@ -117,14 +195,16 @@ li {
     font-size: 36px;
     font-weight: 800;
     padding-bottom: 20px;
-    color: #254090;
+    color: #080e32;
 }
 .sdg .sdg-intro .about-sdg {
     padding-bottom: 20px;
 }
 .sdg .sdg-intro .about-sdg p {
     width: 80%;
-    font-size: 20px;
+    font-size: 18px;
+    color: #4b5280;
+    text-align: justify;
 }
 .sdg .sdg-intro .sdg-list {
     /* height: 100%; */
@@ -135,22 +215,30 @@ li {
     font-family: 'Nunito', sans-serif;
     font-size: 28px;
     padding-bottom: 30px;
-    color: #254090;
+    color: #080e32;
 }
 .sdg .sdg-intro .sdg-list .sdg-cards {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
-}
-.sdg .sdg-intro .sdg-list .sdg-cards .sdg-card {
     display: flex;
     flex-direction: row;
-    margin: 0px 20px 40px 0px;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* align-items: center; */
 }
-.sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .image {
-    min-width: 40%;
-    /* width: auto; */
+.sdg .sdg-intro .sdg-list .sdg-cards .sdg-card {
+    width: 20%;
+    padding: 10px;
+    /* display: flex;
+    flex-direction: row; */
+    /* margin: 0px 20px 20px 0px; */
+}
+.sdg .sdg-intro .sdg-list .sdg-cards .sdg-card img {
+    width: 100%;
+    height: auto;
+}
+/* .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .image {
+    width: 40%;
+    /* width: auto;
     height: auto;
     padding: 20px 5px 0px 20px;
 }
@@ -199,7 +287,7 @@ li {
 }
 .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card:nth-child(9) .image {
     background-color: #AE5156;
-}
+} */
 .footer {
     position: relative;
     width: 100%;

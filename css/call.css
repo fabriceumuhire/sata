@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
 }
 
 html {
@@ -49,17 +52,17 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .header .menu a {
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     font-weight: bold;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin: 0 10px;
-    padding: 0 10px;
-    color: #000000;
-    border-radius: 20px;
+    padding: 25px 20px;
+    color: #080e32;
+    /* border-radius: 20px; */
     transition: 0.3s;
     transition-property: color, background-color;
 }
@@ -105,42 +108,45 @@ li {
 }
 
 .landing .home h1 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
     font-size: 32px;
-    font-weight: bold;
 }
 .call {
     position: relative;
     width: 100%;
-    min-height: 80vh;
+    min-height: auto;
+    
 }
 .call h1 {
-    width: 90%;
-    height: auto;
-    margin: 20px 0px 0px 120px;
+    width: 50%;
     font-family: 'Nunito', sans-serif;
     font-size: 36px;
     font-weight: 800;
-    color: #254090;
+    color: #080e32;
+    margin: 30px 0px 10px 200px;
 }
 .call .details {
+    position: relative;
+    width: 80%;
+    min-height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: left;
-    width: 100%;
-    height: auto;
-    margin: 0px 20px 0px 120px;
+    margin: 0px 40px 60px 200px;
+}
+.call .details .content {
+    max-width: 50%;
+    margin: 10px 60px 0px 40px;
 }
 .call .details .content p {
-    width: 80%;
     font-family: 'Nunito', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px 0px 0px 0px;
+    color: #4b5280;
+    text-align: justify;
 }
 .call .details .visual {
-    width: 90%;
-    margin: 0px 50px 20px 0px;
-}
-.call .details .visual #background {
+    max-width: 45%;
     border: 2px solid #000000;
     border-radius: 10px;
     background-image: url(../img/SAS\ logo.png);
@@ -148,7 +154,9 @@ li {
     margin: 20px 0px 0px 0px;
     box-shadow: 5px 5px #888888;
 }
+
 .call .details .visual p {
+    font-family: 'Source Sans Pro';
     width: 100%;
     color: #254090;
     font-style: italic;
@@ -163,28 +171,53 @@ li {
     padding-bottom: 10px;
 }
 .call .objective .detailed p{
-    width: 80%;
+    width: 90%;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
-    padding: 0px 0px 30px 120px;
+    padding: 0px 0px 30px 200px;
     color: #FFFFFF;
+    text-align: justify;
 }
 .call .objective h2 {
     width: 80%;
     font-family: 'Nunito', sans-serif;
     font-size: 36px;
-    padding: 10px 0px 10px 120px;
+    padding: 10px 0px 10px 200px;
     color: #F78F20;
 }
+.btn {
+    background-color:#254090;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: #F78F20;
+  }
 .call .features {
     position: relative;
     width: 100%;
 }
+.call .features h1 {
+    width: 70%;
+}
 .call .features .row {
     width: 80%;
-    margin: 30px 0px 20px 120px;
-    font-family: 'Nunito', sans-serif;
+    margin: 30px 0px 20px 200px;
+    /* font-family: 'Nunito', sans-serif; */
 }
+.call .features .row .accordion h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: #080e32;
+}
+
 .call .features .row:after {
     content: "";
     display: table;
@@ -201,6 +234,13 @@ li {
     height: 0;
     transition: height 0.3s ease;
 }
+
+.call .features .row .accordion .content p{
+    font-family: 'Nunito Sans', sans-serif;
+    /* font-weight: 400; */
+    font-size: 15px;
+    color: #000000;
+}
   
 .call .features .row .accordion > input[type="checkbox"]:checked ~ .content {
 height: auto;
@@ -208,7 +248,8 @@ overflow: visible;
 }
   
 .call .features .row .accordion label {
-display: block;
+    /* font-size: 22px; */
+    display: block;
 }
   
 .call .features .row .accordion {
@@ -223,14 +264,14 @@ border-top: 0;
 
 .call .features .row .accordion .handle {
 margin: 0;
-font-size: 20px;
+/* font-size: 20px; */
 line-height: 1.2em;
 }
 
 .call .features .row .accordion label {
 /* color: #FFFFFF; */
 cursor: pointer;
-font-weight: normal;
+/* font-weight: 700; */
 padding: 15px;
 background-color: #e8e8e8;
 }
@@ -241,11 +282,10 @@ color: #F78F20;
 }
 
 .call .features .row .accordion .handle label:before {
-font-family: 'fontawesome';
 content: "\f054";
 display: inline-block;
 margin-right: 10px;
-font-size: .58em;
+/* font-size: .58em; */
 line-height: 1.556em;
 vertical-align: middle;
 }
@@ -258,38 +298,40 @@ content: "\f078";
 /*
 Demo purposes only
 */
-*,
+/* *,
 *:before,
 *:after {
 box-sizing: border-box;
-}
+} */
 
 .call .features .row .accordion {
 max-width: 65em;
 }
 
 .call .features .row .accordion p:last-child {
-margin-bottom: 0;
+    margin-bottom: 0;
+
 }
 
 .call .partners {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    /* min-height: 75vh; */
     background-color: #F7F7F7;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 .call .partners .endorse {
+    width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 20px 0px 40px 120px;
+    margin: 20px 0px 40px 200px;
 }
 .call .partners .endorse-card {
     width: 100%;
     padding: 20px 0px 40px 0px;
 }
 .call .partners .endorse-card img{
-    width: 70%;
+    width: 55%;
 }
 /* .call .partners .endorse-card #small {
     margin-top: 80px;
@@ -334,7 +376,7 @@ margin-bottom: 0;
 
     .header .menu {
         position: fixed;
-        background-color: #254090;
+        background-color: #080e32;
         flex-direction: column;
         width: 100%;
         height: 100vh;
@@ -382,14 +424,34 @@ margin-bottom: 0;
         font-size: 28px;
     }
     .call .details {
-        display: flex;
+        width: 100%;
         flex-direction: column;
         /* justify-content: left; */
         margin: 10px 0px 0px 0px;
     }
+    .call .details .content {
+        max-width: 95%;
+        margin: 0px;
+    }
+    /* .call .details .content p {
+        font-family: 'Nunito', sans-serif;
+        font-size: 18px;
+        padding: 10px 0px 0px 0px;
+        color: #4b5280;
+        text-align: justify;
+    } */
+    .call .details .visual {
+        max-width: 100%;
+        /* border: 2px solid #000000;
+        border-radius: 10px;
+        background-image: url(../img/SAS\ logo.png);
+        padding: 20px; 
+        margin: 20px 0px 0px 0px;
+        box-shadow: 5px 5px #888888; */
+    }
     .call .details .content p {
-        width: 90%;
-        font-size: 16px;
+        width: 100%;
+        font-size: 15px;
         padding: 10px 0px 0px 20px;;
     }
     .call .details .visual {
@@ -398,7 +460,7 @@ margin-bottom: 0;
     }
     .call .details .visual p {
         width: 100%;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: normal;
     }
     .call .objective .detailed p{
@@ -410,11 +472,15 @@ margin-bottom: 0;
         font-size: 28px;
         padding: 10px 0px 10px 20px;
     }
+    .call .features {
+        width: 90%;
+    }
     .call .features .title h1 {
+        width: 100%;
         font-size: 22px;
     }
     .call .features .row {
-        width: 95%;
+        width: 100%;
         margin: 30px 0px 20px 20px;
     }
     .call .features .row .accordion .handle {
@@ -473,23 +539,29 @@ margin-bottom: 0;
     } */
     
     .call .features .row .accordion {
-    max-width: 65em;
+        width: 100%;
     }
     .call .partners {
-        min-height: 100vh;
+        /* min-height: 100vh; */
         padding-top: 10px;
     }
+    .call .partners h1 {
+        width: 90%;
+        font-size: 24px;
+    }
     .call .partners .endorse {
+        width: 90%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: 20px 0px 0px 20px;
     }
-    /* .call .partners .endorse-card {
+    .call .partners .endorse-card {
         width: 100%;
-        padding: 0px 0px 40px 0px;
-    } */
+        padding: 10px;
+    }
     .call .partners .endorse-card img{
-        width: 80%;
+        width: 100%;
+        
     }
     /* .call .partners .endorse-card:nth-child(4) {
         margin-top: 50px;

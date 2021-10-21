@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
 * {
     padding: 0;
@@ -19,7 +17,7 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     margin: 0;
-  }
+}
 a {
     text-decoration: none;
 }
@@ -104,7 +102,7 @@ li {
 
 .landing .home {
     padding: 0 140px;
-    margin-top: 100px;
+    margin: 100px auto 0px 60px;
     color: #f7f7f7;
     letter-spacing: 5px;
 }
@@ -116,8 +114,8 @@ li {
 }
 
 .landing .home h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
     font-size: 46px;
 }
 
@@ -127,30 +125,30 @@ li {
 
 .about {
     position: relative;
-    width: 100%;
-    min-height: 60vh;
+    width: 80%;
+    min-height: auto;
     display: flex;
     flex-direction: row;
+    margin: 30px 40px 40px 200px;
 }
 
 .about .about-passion {
-    width: 45%;
+    width: 65%;
     height: auto;
-    margin: 20px 0px 0px 120px;
 }
 
 .about .about-passion h1 {
-    font-size: 36px;
+    font-size: 42px;
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
-    color: #494c4f;
+    color: #080e32;
 }
 .about .about-fav p {
     font-family: 'Nunito', sans-serif;
     padding-top: 20px;
     font-size: 18px;
     line-height: 25px;
-    color: #254090;
+    color: #4b5280;
     text-align: justify;
     /* align-items: center; */
 }
@@ -158,55 +156,14 @@ li {
 .about .about-fav p span {
     color: #F78F20;
 }
-
-.about .list {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* align-items: center; */
-    margin: 10px 0px 40px 0px; 
-    padding-top: 20px;
-}
-
-.list .category{
-    height: 24vh;
-    width: 50%;
-    padding: 50px 0px 10px 5px;
-    text-align: center;
-}
-.list .category a{
-    font-family: 'Nunito', sans-serif;
-    font-size: 18px;
-    font-weight: bolder;
-    color: #FFFFFF;
-    text-transform: uppercase;
-}
-.list .category:nth-child(1) {
-    background-color: #254090;
-}
-
-.list .category:nth-child(2) {
-    background-color: #F78F20;
-
-}
-
-.list .category:nth-child(3) {
-    background-color: #10a680;
-}
-
-.list .category:nth-child(4) {
-    background-color: #254090;
-    padding-top: 60px;
-}
 .about .about-img {
     background-image: url('../img/digitalbck.png');
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
-    max-width: 35%;
+    width: 55%;
     border-radius: 10px;
-    margin: 80px 0px auto 40px;
+    margin: 90px 100px auto 40px;
     padding: 40px 20px 20px 30px;
     text-align: center;
 
@@ -225,6 +182,72 @@ li {
     font-style: italic;
     padding-bottom: 20px;
 }
+
+.benefit {
+    width: 80%;
+    margin: 0px auto 0px 200px;
+    
+}
+.benefit img {
+    border-radius: 5px;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 40px;
+}
+.benefit h2 {
+    font-size: 36px;
+    font-family: 'Nunito', sans-serif;
+    /* font-weight: 0; */
+    color: #080e32;
+    margin-bottom: 40px;
+}
+.benefit .list {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    margin: 10px 80px 40px 0px; 
+    /* padding-top: 20px; */
+}
+
+.list .category{
+    height: auto;
+    width: auto;
+    padding: 20px 0px 10px 20px;
+    /* text-align: center; */
+}
+.list .category a{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.list .category a:hover {
+    color: #F78F20;
+}
+.list .category:nth-child(2) a:hover{
+    color: #080e32;
+}
+.list .category:nth-child(1) {
+    background-color: #254090;
+}
+
+.list .category:nth-child(2) {
+    background-color: #F78F20;
+
+}
+
+.list .category:nth-child(3) {
+    background-color: #10a680;
+}
+
+.list .category:nth-child(4) {
+    background-color: #254090;
+    /* padding-top: 60px; */
+}
+
 .footer {
     position: relative;
     width: 100%;
@@ -265,7 +288,7 @@ li {
 
     .header .menu {
         position: fixed;
-        background-color: #254090;
+        background-color: #080e32;
         flex-direction: column;
         width: 100%;
         height: 100vh;
@@ -295,19 +318,24 @@ li {
     }
     .landing .home {
         padding: 40px 20px;
+        margin: 20px auto 0px 0px;
+        padding: 40px 20px;
         margin-top: 20px;
     }
     
     .landing .home p {
-        font-size: 20px;
-        margin-top: 80px;
-        padding-bottom: 50px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        margin-top: 40px;
+        padding-bottom: 30px;
     }
     
     .landing .home h1 {
-        font-family: 'Nunito';
-        font-size: 32px;
-        font-weight: 800;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .benefit {
+        display: none;
     }
     .about{
         display: none;
@@ -330,58 +358,83 @@ li {
     
     .mob-about .about-passion h1 {
         font-family: 'Nunito', sans-serif;
+        font-size: 22px;
         font-weight: 800;
-        color: #254090;
+        color: #080e32;
     }
     .mob-about .about-fav p {
         font-family: 'Nunito';
         padding-top: 10px;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 25px;
         align-items: center;
+        color: #4b5280;
+        text-align: justify;
     }
     
     .mob-about .about-fav p span {
         font-size: 18px;
         color: #F78F20;
     }
-    .list {
+    .mob-about .details {
+        width: 90%;
+        height: auto;
+        margin: 10px 20px;
+    }
+    .mob-about .details h1 {
+        font-family: 'Nunito', sans-serif;
+        font-size: 22px;
+        font-weight: 800;
+        color: #080e32;
+        margin: 10px 20px 0px 0px;
+    }
+    .mob-about .details img {
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         width: 100%;
+    }
+    .mob-about .list {
+        width: 90%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-content: center;
-        margin: 30px 0px 20px 0px;
+        margin: 20px 0px 40px 20px;
     }
-    .list .category{
-        padding: 20px 5px 10px 0px;
+    .mob-about .list .category{
+        height: 10vh;
+        width: 100%;
+        align-items: center;
+        /* padding: 10px 5px 5px 0px; */
     }
-    .list .category a{
-        font-size: 18px;
+    .mob-about .list .category a{
+        width: 50%;
+        font-size: 16px;
         text-transform: uppercase;
     }
-    .list .category a:hover{
+    .mob-about .list .category a:hover{
         color: #000000;
     }
-    .list .category:nth-child(1) {
+    /* .mob-about .list .category:nth-child(1) {
         background-color: #254090;
-        padding-top: 40px;
+        padding-top: 10px;
     }
     
-    .list .category:nth-child(2) {
+    .mob-about .list .category:nth-child(2) {
         background-color: #F78F20;
         padding-top: 40px;
     }
     
-    .list .category:nth-child(3) {
+    .mob-about .list .category:nth-child(3) {
         background-color: #10a680;
         padding-top: 40px;
     }
     
-    .list .category:nth-child(4) {
+    .mob-about .list .category:nth-child(4) {
         background-color: #254090;
         padding-top: 50px;
-    }
+    } */
     .mob-about .about-img {
         background-image: url('../img/digitalbck.png');
         background-repeat: no-repeat;
