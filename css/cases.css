@@ -254,7 +254,7 @@ li {
 
     .header .menu {
         position: fixed;
-        background-color: #254090;
+        background-color: #080e32;
         flex-direction: column;
         width: 100%;
         height: 100vh;
@@ -304,17 +304,20 @@ li {
         padding: 0px 0px 20px 0px;
     }
     .cases .definition h1 {
-        width: 80%;
+        width: 90%;
         font-size: 28px;
     }
     .cases .definition h2 {
         width: 80%;
         font-size: 22px;
     }
-    .cases .definition p {
+    .cases .definition .basic {
+        margin: 20px 0px 20px 0px;
+    }
+    .cases .definition .basic p {
         font-family: 'Nunito', sans-serif;
         width: 100%;
-        font-size: 16px;
+        font-size: 15px;
         padding-bottom: 10px;
     }
     .cases .case-card {
