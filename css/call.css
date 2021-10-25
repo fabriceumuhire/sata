@@ -9,7 +9,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Nunito', sans-serif;
 }
 
 html {
@@ -194,12 +194,12 @@ li {
     cursor: pointer;
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
-  }
-  
+}
+
   /* Darker background on mouse-over */
-  .btn:hover {
+.btn:hover {
     background-color: #F78F20;
-  }
+}
 .call .features {
     position: relative;
     width: 100%;
@@ -293,49 +293,35 @@ vertical-align: middle;
 .call .features .row .accordion > input[type="checkbox"]:checked ~ .handle label:before {
 content: "\f078";
 }
-
-
-/*
-Demo purposes only
-*/
-/* *,
-*:before,
-*:after {
-box-sizing: border-box;
-} */
-
 .call .features .row .accordion {
 max-width: 65em;
 }
-
 .call .features .row .accordion p:last-child {
     margin-bottom: 0;
 
 }
-
 .call .partners {
     position: relative;
     width: 100%;
-    /* min-height: 75vh; */
     background-color: #F7F7F7;
-    /* padding-top: 20px; */
+}
+.call .partners h1{
+    padding: 30px 0px 0px 0px;
 }
 .call .partners .endorse {
     width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 20px 0px 40px 200px;
+    margin: 20px 0px 0px 200px;
 }
 .call .partners .endorse-card {
     width: 100%;
     padding: 20px 0px 40px 0px;
 }
 .call .partners .endorse-card img{
-    width: 55%;
+    width: 60%;
+    height: auto;
 }
-/* .call .partners .endorse-card #small {
-    margin-top: 80px;
-} */
 .footer {
     position: relative;
     width: 100%;
