@@ -107,7 +107,7 @@
     <!-- SDG section-->
     <section class="sdg">
         <div class="sdg-intro">
-            <h1>SATA SDGs</h1>
+            <h1>SDGs</h1>
             <div class="about-sdg">
                 <p>
                     SATA will revolutionize access to public and private services and anchor the foundations of a vibrant digital economy in Africa. This will help develop socio-economic benefits to all by accelerating inclusion and access whereby supporting the SDGs and stimulate the growth of intra-african trade.
@@ -313,18 +313,53 @@
         const menu = document.querySelector('.menu');
         const menuBtn = document.querySelector('.menu-btn');
         const closeBtn = document.querySelector('.close-btn');
-  
         menuBtn.addEventListener('click', () => {
-          menu.classList.add('active');
+            menu.classList.add('active');
         });
-  
+
         menu.addEventListener('click', () => {
-          menu.classList.remove('active');
+            menu.classList.remove('active');
         });
-  
+
         closeBtn.addEventListener('click', () => {
-          menu.classList.remove('active');
+            menu.classList.remove('active');
         });
-      </script>
+        var sliderIndex = 0;
+        showSlide();
+
+        function showSlide() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dotted");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            sliderIndex++;
+            if (sliderIndex > slides.length) {sliderIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[sliderIndex-1].style.display = "block";  
+            dots[sliderIndex-1].className += " active";
+            setTimeout(showSlide, 10000); // Change image every 10 seconds
+        }
+        var sliderIndex = 1;
+        showDivs(sliderIndex);
+
+        function plusDivs(n) {
+            showDivs(sliderIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {sliderIndex = 1}
+            if (n < 1) {sliderIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[sliderIndex-1].style.display = "block";
+        }
+    </script>
 </body>
 </html>

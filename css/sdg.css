@@ -210,84 +210,20 @@ max-width: 100%;
     /* height: 100%; */
     display: grid;
 }
-.sdg .sdg-intro .sdg-list h5 {
-    width: 60%;
-    font-family: 'Nunito', sans-serif;
-    font-size: 28px;
-    padding-bottom: 30px;
-    color: #080e32;
-}
 .sdg .sdg-intro .sdg-list .sdg-cards {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
-    /* align-items: center; */
 }
 .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card {
     width: 20%;
     padding: 10px;
-    /* display: flex;
-    flex-direction: row; */
-    /* margin: 0px 20px 20px 0px; */
 }
 .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card img {
     width: 100%;
     height: auto;
 }
-/* .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .image {
-    width: 40%;
-    /* width: auto;
-    height: auto;
-    padding: 20px 5px 0px 20px;
-}
-.sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .image h4{
-    font-family: 'Nunito', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    color: #FFFFFF;
-    width: auto;
-}
-.sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .image img {
-    width: auto;
-    height: auto;
-}
-.sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .content {
-    background-color: #d7d7d7;
-    padding: 20px 5px 0px 10px;
-}
-.sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .content p span {
-    font-weight: bold;
-    padding-bottom: 5px;
-}
-.sdg .sdg-intro .sdg-list .sdg-cards .sdg-card:nth-child(1) .image {
-    background-color: #E95353;
-}
-.sdg .sdg-intro .sdg-list .sdg-cards .sdg-card:nth-child(2) .image {
-    background-color: #18D8C1;
-}
-.sdg .sdg-intro .sdg-list .sdg-cards .sdg-card:nth-child(3) .image {
-    background-color: #B8A562;
-}
-.sdg .sdg-intro .sdg-list .sdg-cards .sdg-card:nth-child(4) .image {
-    background-color: #446ACC;
-}
-.sdg .sdg-intro .sdg-list .sdg-cards .sdg-card:nth-child(5) .image {
-    background-color: #62B875;
-}
-.sdg .sdg-intro .sdg-list .sdg-cards .sdg-card:nth-child(6) .image {
-    background-color: #8D5A0E;
-}
-.sdg .sdg-intro .sdg-list .sdg-cards .sdg-card:nth-child(7) .image {
-    background-color: #F3E033;
-}
-.sdg .sdg-intro .sdg-list .sdg-cards .sdg-card:nth-child(8) .image {
-    background-color: #6B4545;
-}
-.sdg .sdg-intro .sdg-list .sdg-cards .sdg-card:nth-child(9) .image {
-    background-color: #AE5156;
-} */
 .footer {
     position: relative;
     width: 100%;
@@ -328,7 +264,7 @@ max-width: 100%;
 
     .header .menu {
         position: fixed;
-        background-color: #254090;
+        background-color: #080e32;
         flex-direction: column;
         width: 100%;
         height: 100vh;
@@ -369,9 +305,119 @@ max-width: 100%;
         font-size: 20px;
         font-weight: 400;
     }
+    .benefits .benefit-content {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+    }
+    
+    .benefits .benefit-content h1 {
+        width: 70%;
+        font-size: 28px;
+        padding-bottom: 10px;
+        margin: 10px 0px 0px 10px;
+    }
+    .benefits .benefit-content .benefit-overview {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .benefits .benefit-content .benefit-overview .logo{
+        display: none;
+    }
+    .benefits .benefit-content .mobile {
+        display: flex;
+        width: 100%;
+        margin: 0px;
+        position: relative;
+    }
+    .mobile .mySlides {
+        padding: 0px 10px 10px 10px;
+    }
+    .mobile .mySlides h3 {
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        padding: 10px 0px 20px 0px;
+        color: #080e32;
+    }
+    .benefits .benefit-content .benefit-overview .container {
+        background-color: #254090;
+        width: 100% !important;
+        margin: 0px !important;
+        padding: 5px;
+    }
+    .mobile .mySlides ul li{
+        background-color: #9CC6ED;
+        color: #000000;
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    /* The dots/bullets/indicators */
+    .dotted-container {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .dotted-container .dotted {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #dfd6ce;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    .dotted-container .active, .dotted:hover {
+        border: 2px solid green;
+    }
+    
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+    
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+    .benefits .benefit-content .benefit-overview .content {
+        width: 100%;
+    }
+    
+    .benefits .benefit-content .benefit-overview .content h2 {
+        font-family: 'Nunito', sans-serif;
+        font-size: 22px;
+        padding-bottom: 20px;
+        color: #F78F20;
+        margin: 20px 0px 0px 10px;
+    }
+    .benefits .benefit-content .benefit-overview .content p{
+        margin: 0px 20px 0px 10px;
+        font-size: 15px;
+    }
+    .benefits .benefit-content .benefit-overview .content .container p {
+        color: #FFFFFF;
+    }
+    .benefit-slide {
+        display: none;
+    }
+    .dots-container {
+        display: none;
+    }
     .sdg{
         position: relative;
         margin: 20px 20px 0px 20px;
+        width: 90%;
     }
     .sdg .sdg-intro h1 {
         width: 80%;
@@ -380,49 +426,25 @@ max-width: 100%;
     }
     .sdg .sdg-intro .about-sdg p {
         width: 100%;
-        font-size: 16px;
+        font-size: 15px;
     }
-   .sdg .sdg-intro .sdg-list h5 {
+    .sdg .sdg-intro .sdg-list h5 {
         width: 100%;
         font-size: 18px;
     }
-     .sdg .sdg-intro .sdg-list .sdg-cards {
-        display: grid;
-        grid-template-columns: 1fr;
+    .sdg .sdg-intro .sdg-list .sdg-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
     }
     .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card {
-        margin: 0px 10px 30px 0px;
+        width: 33%;
     }
-    .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .image {
-        min-width: 40%;
-        max-height: 40vh;
-        padding: 10px 5px 0px 10px;
+    .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card img {
+        width: 100%;
     }
-    .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .image h4{
-        font-size: 16px;
-    }
-    .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .image h4:nth-child(1){
-        padding-top: 20px;
-    }
-    .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .image h4:nth-child(7){
-        padding-top: 40px;
-    }
-    .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .image h4:nth-child(9){
-        padding-top: 40px;
-    }
-    .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .image img {
-        justify-content: center;
-        width: 50%;
-        height: 50vh;
-    }
-    .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .content {
-        font-size: 16px;
-        padding: 0px 5px 0px 10px;
-    }
-     /* .sdg .sdg-intro .sdg-list .sdg-cards .sdg-card .content p span {
-        display: none;
-    } */
-    
     .footer .footer-col img {
         width: 30px;
     }
