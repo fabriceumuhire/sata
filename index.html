@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/call.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title>SATA | Home</title>
@@ -18,12 +19,12 @@
             <div class="toggle">
                 <i class="fas fa-times close-btn"></i>
             </div>
-            <a href="#landing" class="active">About SATA</a>
-            <a href="./pages/call.html">SATA Call</a>
+            <a href="#landing" class="active">Home</a>
+            <a href="#mission">Mission</a>
             <!-- <a href="./pages/benefits.html">Benefits</a> -->
-            <a href="./pages/cases.html">Use cases</a>
-            <a href="./pages/certifications.html">Certifications</a>
-            <a href="./pages/sdg.html">SATA & SDGs</a>
+            <a href="#vision">Vision</a>
+            <a href="#objectives">Strategic Objectives</a>
+            <a href="#contact-us">Contact Us</a>
         </div>
         <div class="toggle">
             <i class="fas fa-bars menu-btn"></i>
@@ -43,11 +44,12 @@
     <!-- About section-->
     <section class="about" id="about-us">
         <div class="about-passion">
-            <h1>What is SATA?</h1>
+            <h1>Welcome to SATA</h1>
             <div class="about-fav">
                 <p>
-                    <span>Smart Africa Trust Alliance (SATA)</span> is a continental consortium of both public and private members which aims to mobilize Africa to its full potential into a single digital market while respecting the sovereignty of African countries. SATA provides certifications to ID and service providers and offers a federated platform to share information under data sharing rules mutually agreed by African states. SATA is a mechanism of cooperation to ensure harmonized policies are followed and allow transfer of data across countries in Africa.<br/><br/>
-                    With more than 41% of the African population without legal identity and intra-Africa trade accounted for less than 20% of Africa's total trade, SATA includes and empowers everyone to be part of the transformation of Africa into a single digital market.<br/>
+                    <span>Smart Africa Trust Alliance</span> is a continental platform of public and private institutions joining the interoperability framework of the national data registers and identities.<br/><br/>
+                    <span>Smart Africa Trust Alliance</span> initiates and supports the cross-border services based on mutually agreed standards by African governments and provide trust services.</br>
+                    <!-- With more than 41% of the African population without legal identity and intra-Africa trade accounted for less than 20% of Africa's total trade, SATA includes and empowers everyone to be part of the transformation of Africa into a single digital market.<br/> -->
                 </p>
             </div>
         </div>
@@ -60,43 +62,67 @@
             </span>
         </div>
     </section>
-    <section class="benefit">
-        <div class="details">
-            <h2>SATA Benefits</h2>
-            <img src="./img/benefits.png" alt="benefits">
-        </div>
-        <h2>Important information about SATA</h2>
-        <div class="list">
-            <div class="category">
+    <!-- Start Objectives -->
+    <section class="call" id="mission">
+        <div class="objective">
+            <h2>How SATA works</h2>
+            <div class="detailed">
+                <img src="./img/Design.jpg" alt="SATA- IDP">
                 <p>
-                    <a href="./pages/call.html">SATA CALL</a>
+                    The Mission behind SATA is to realize the African Single Digital Market with interoperability of the National Data Registers.<br/><br/>
+                    A platform of cooperation to ensure harmonized policies, standards, and requirements are created and joined. SATA will enable the interoperability of data exchange, identities, and services across countries in Africa.
                 </p>
-            </div>
-            <div class="category">
-                <p>
-                    <a href="./pages/cases.html">Use cases: two pilot projects by SATA</a>
-                </p>
-            </div>
-            <div class="category">
-                <p>
-                    <a href="./pages/certifications.html">Certification & Compliance: Core task for SATA</a>
-                </p>
-            </div>
-            <div class="category">
-                <p>
-                    <a href="./pages/sdg.html">SATA Benefits& SDGs</a>
-                </p>
+                <!-- <p>
+                    By creating a framework that enables the trusted and controlled movement of people, data, money, services and goods, SATA stimulates the growth of intra-African trade, directly supporting the African Continental Free Trade Area (AfCFTA).
+                </p> -->
             </div>
         </div>
     </section>
+    <!-- End of Objectives -->
+    <!-- Start Objectives -->
+    <section class="sata-vision" id="vision">
+        <div class="vision">
+            <div class="detailed">
+                <p>
+                    SATA is an “Armed Wing” of Smart Africa to effectively build a Single Digital Market<br/><br/>
+                    Include and empower everyone to be part of the transformation of Africa into a Single Digital Market.<br/><br/>
+                    Create a framework that enables the trusted and controlled movement of people, data, services and goods to stimulate the growth of intra-African trade and support the <span>African Continental Free Trade Area.</span>
+                </p>
+                <img src="./img/ourvision.jpeg" alt="vision">
+            </div>
+        </div>
+    </section>
+    <section class="strategy" id="objectives">
+        <div class="strategy">
+            <h1>Strategic Objectives</h1>
+            <img src="./img/Strategic Objectives (1).png" alt="Strategic Objectives">
+        </div>
+    </section>
+    <section class="contact-us" id="contact-us">
+        <div class="contact">
+        <div class="content-info"></div>
+        <div class="content">
+            <h2>Contact Us</h2>
+            <form autocomplete="off" id="contact_form">
+            <div class="alert alert-success"></div>
+            <input type="text" class="field" name="name" id="name" placeholder="Your Full Names">
+            <input type="email" class="field" name="email" id="email" placeholder="Your Email" required>
+            <input type="text" class="field" name="subject" id="subject" placeholder="Subject">
+            <textarea type="text" class="field area" name="message" id="message" placeholder="Message..." required></textarea>
+            <button type="submit" class="btn" id="submit">Send</button>
+            </form>
+        </div>
+        </div>
+    </section>
+    <!-- End of Objectives -->
     <!-- End of About section-->
     <!-- Mobile About section-->
     <section class="mob-about" id="about-us">
         <div class="about-passion">
-            <h1>What is SATA?</h1>
+            <h1>Welcome to SATA</h1>
             <div class="about-fav">
                 <p>
-                    <span>Smart Africa Trust Alliance (SATA)</span> is a continental consortium which aims to empower people and organizations to interact and transact across the borders of Smart Africa State Members through a digital framework.<br/>
+                    <span>Smart Africa Trust Alliance</span> is a continental platform of public and private institutions joining the interoperability framework of the national data registers and identities.<br/>
                 </p>
                 <div class="about-img">
                     <p>
@@ -107,36 +133,43 @@
                     </span>
                 </div>
                 <p>
-                    With more than 41% of population without legal identity, SATA will facilitate to empower these people to engage across the continent through integration of functional solutions with Service Providers and create confidence to new opportunities for transnational traders easing the present border barriers.<br/>
+                    <span>Smart Africa Trust Alliance</span> initiates and supports the cross-border services based on mutually agreed standards by African governments and provide trust services.</br>
                 </p>
             </div>
         </div>
-        <div class="details">
-            <h1>Important information about SATA</h1>
-            <!-- <h2>SATA Benefits</h2> -->
-            <!-- <img src="./img/benefits.png" alt="benefits"> -->
+    </section>
+    <section class="mob-call" id="mission">
+        <div class="objective">
+            <h2>How SATA works</h2>
+            <div class="detailed">
+                <div>
+                    The Mission behind SATA is to realize the African Single Digital Market with interoperability of the National Data Registers.
+                </div>
+                <img src="./img/Design.jpg" alt="SATA- IDP">
+                <p>
+                    A platform of cooperation to ensure harmonized policies, standards, and requirements are created and joined. SATA will enable the interoperability of data exchange, identities, and services across countries in Africa.
+                </p>
+                <!-- <p>
+                    By creating a framework that enables the trusted and controlled movement of people, data, money, services and goods, SATA stimulates the growth of intra-African trade, directly supporting the African Continental Free Trade Area (AfCFTA).
+                </p> -->
+            </div>
         </div>
-        <div class="list">
-            <div class="category">
+    </section>
+    <section class="mob-sata-vision" id="vision">
+        <div class="vision">
+            <div class="detailed">
                 <p>
-                    <a href="./pages/call.html">SATA Call</a>
+                    SATA is an “Armed Wing” of Smart Africa to effectively build a Single Digital Market<br/><br/>
+                    Include and empower everyone to be part of the transformation of Africa into a Single Digital Market.<br/><br/>
+                    Create a framework that enables the trusted and controlled movement of people, data, services and goods to stimulate the growth of intra-African trade and support the <span>African Continental Free Trade Area.</span>
                 </p>
             </div>
-            <div class="category">
-                <p>
-                    <a href="./pages/cases.html">SATA's pilot projects</a>
-                </p>
-            </div>
-            <div class="category">
-                <p>
-                    <a href="./pages/certifications.html">Certification & Compliance</a>
-                </p>
-            </div>
-            <div class="category">
-                <p>
-                    <a href="./pages/sdg.html">SATA Benefits& SDGs</a>
-                </p>
-            </div>
+        </div>
+    </section>
+    <section class="mob-strategy" id="objectives">
+        <div class="strategy">
+            <h1>Strategic Objectives</h1>
+            <img src="./img/Strategic Objectives (1).png" alt="Strategic Objectives">
         </div>
     </section>
     <!-- End of About section-->
@@ -146,6 +179,15 @@
             <img src="./img/SAS logo.png" alt="sata image">
             <h4>SMART AFRICA TRUST ALLIANCE</h4>
         </div>
+        <div class="footer-col">
+            <div class="vl"></div>
+            <h4>Get in touch</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/intent/tweet?screen_name=RealSmartAfrica&ref_src=twsrc%5Etfw"><i class="fab fa-twitter"></i></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
     </section>
     <script>
         const menu = document.querySelector('.menu');
